@@ -119,6 +119,7 @@
                         <strong>Album</strong>
                     </a>
                     <a href="/" class="navbar-brand d-flex align-items-center">Anasayfa</a>
+                    <a href="/products/" class="navbar-brand d-flex align-items-center">Ürünler</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,7 +140,7 @@
                     </div>
                     <div class="col-md-6 col-sm-12 description-container p-5">
                         <div class="main-description">
-                            <p class="product-category mb-0">{{ card.brand }}</p>
+                            <p class="product-category mb-0">{{ card.brand }} - {{ card.brand.date_now }}</p>
                             <h3>{{ card.title }}</h3>
                             <hr>
                             <p class="product-price">₺{{ card.price }}</p>
