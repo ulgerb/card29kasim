@@ -25,4 +25,9 @@ urlpatterns = [
     path('',index, name='index'),
     path('detay/<id>/', Detail, name='Detail'),
     path('products/<brandurl>/', allProduct, name='allProduct'),
+    # USER
+    path('login/', loginUser, name="loginUser"), # giriş yap
+    path('logout/', logoutUser, name="logoutUser"), # çıkış yap
+    path('register/', registerUser, name="registerUser"), # Kaydol
+    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
